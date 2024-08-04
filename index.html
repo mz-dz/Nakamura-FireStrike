@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakamura FireStrike Studio</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #1a202c;
+            color: #cbd5e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2d3748;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        h1 {
+            color: #48bb78;
+            margin: 0;
+        }
+        nav {
+            background-color: #4a5568;
+            padding: 0.5rem;
+            position: sticky;
+            top: 60px;
+            z-index: 10;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: #cbd5e0;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: #48bb78;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2, h3 {
+            color: #48bb78;
+        }
+        footer {
+            background-color: #2d3748;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .game, .contact-item {
+            margin-bottom: 1rem;
+        }
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: currentColor;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎮 Nakamura FireStrike Studio</h1>
+        <p>One-person army, infinite imagination</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#nion">Nion</a></li> <!-- New menu item for Nion -->
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to Nakamura FireStrike Studio! 🧙‍♂️✨</h2>
+            <p>Where magic meets 3D art and one developer conjures entire worlds. Scroll down to explore the realm of solo game development!</p>
+        </section>
+
+        <section id="games">
+            <h2>Games 🕹️</h2>
+            <div class="game">
+                <h3>Space Hamster Odyssey 🐹🚀</h3>
+                <p>Join Ham Solo on an epic journey through the cosmos! Coming soon to a screen near you.</p>
+            </div>
+            <div class="game">
+                <h3>Vision Hunt 🧪</h3>
+                <p>Vision Hunt coming soon on Itch.io.</p>
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2>About the Wizard 🧙‍♂️</h2>
+            <p>Hi, I'm the solo developer Nakamura FireStrike Studio. Armed with a keyboard, fueled by coffee, and powered by sheer determination, I craft digital adventures from the comfort of my wizard tower (aka my bedroom).</p>
+            
+            <h3>Dev Process</h3>
+            <ul>
+                <li><span class="icon" aria-label="Computer">💻</span> Code like there's no tomorrow</li>
+                <li><span class="icon" aria-label="Coffee">☕</span> Fuel up on coffee</li>
+                <li><span class="icon" aria-label="Game Controller">🎮</span> Test, rage quit, repeat</li>
+                <li><span class="icon" aria-label="Rocket">🚀</span> Launch and hope for the best</li>
+            </ul>
+            
+            <h3>Fun Facts</h3>
+            <ul>
+                <li>Bugs squashed: 9001+</li>
+                <li>Coffees consumed: ∞</li>
+                <li>Hours slept: 404 - Not Found</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact 📬</h2>
+            <p>Want to chat about games, collaboration, or just geek out about pixels? Reach out!</p>
+            <div class="contact-item"><span class="icon" aria-label="Email">📧</span> tgrtgr389@gmail.com</div>
+            <div class="contact-item"><span class="icon" aria-label="Twitter">🐦</span> @Nakamura-FireStrike</div>
+            <div class="contact-item"><span class="icon" aria-label="GitHub">👾</span> <a href="https://github.com/mz-dz" target="_blank">https://github.com/mz-dz</a></div>
+        </section>
+        
+        <section id="nion"> <!-- New section for Nion -->
+            <h2>Nion ⚡</h2>
+            <p>Discover the power of Nion, the latest tool in our game development arsenal. Stay tuned for updates on how this will transform our game creation process!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 Nakamura FireStrike Studio | Powered by determination and pizza 🍕</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
